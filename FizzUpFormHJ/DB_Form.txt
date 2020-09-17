@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS fizzform;
+CREATE DATABASE fizzform;
+USE fizzform;
+
+DROP TABLE IF EXISTS `avis`;
+CREATE TABLE IF NOT EXISTS `avis` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pseudo` varchar(30) NOT NULL,
+  `mail` varchar(60) NOT NULL,
+  `note` tinyint(4) NOT NULL,
+  `commentaire` text,
+  `dt` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `img_path` varchar(60) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+COMMIT;
