@@ -127,7 +127,7 @@
                	    ?>
                	</div>
                 </br>
-                <?php echo ($errorMSg ? "<div id='file_size_error'>Le ficher que vous tentez d'envoyer est trop lourd (6MB Max) ou le fichier que vous tentez d'envoyer n'est pas une image.</div> " : null);?>
+                <?php echo ($errorMSg ? "<div id='file_size_error'>Le ficher que vous tentez d'envoyer est trop lourd (2MB Max) ou le fichier que vous tentez d'envoyer n'est pas une image.</div> " : null);?>
                 <input type="file" name="file" accept=".png, .jpg, .jpeg" id="form_file"></br></br>
 				
 				<input type="submit" name="submit" value="Envoyer">
